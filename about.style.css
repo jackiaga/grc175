@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Add some padding */
+    background-color: white; /* Example background color */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-container {
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.logo {
+    width: 150px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.icon-container {
+    display: flex; 
+    gap: 10px; /* Space between icons */
+    margin-left: 30px;
+}
+
+.icon {
+    text-decoration: none; /*remove underline form links */
+}
+.icon-img{
+    width: 24px; 
+    height: auto; /*maintain ration*/
+    transition: opacity 0.3s; /*smooth transition for hover effect*/
+}
+
+.nav {
+    display: flex; 
+    margin-left: auto; /* Space between icons and nav */
+
+}
+
+.nav ul {
+    display: flex; /* Display nav items inline */
+    list-style-type: none; /* Remove bullet points */
+    gap: 35px; /* Space between nav items */
+}
+
+.nav a.active {
+    color: #ff9900; /* Change this to your desired color */
+    font-weight: bold; /* Optional: make it bold */
+}
+.nav a {
+    color: black; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px;
+    font-weight: 600
+}
+.nav a:hover {
+    color: #ff9900; /* Change this to your desired color */
+; /* Background color on hover */
+}
+
+/* Icon styles */
+.icon-img {
+    height: 30px; /* Icon height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Extra icons container */
+.extra-icons {
+    display: flex; /* Use Flexbox for additional icons */
+    gap: 10px; /* Space between extra icons */
+    margin-left: 150px; /* Space between nav and extra icons */
+}
+
+.extra-icons .search-img {
+    width: 24px; /* Set size for extra icons */
+    height: auto; /*maintain ration*/
+}
+
+.extra-icons .cart-icon {
+    width: 28px;
+    height: auto;
+}
+
+.about-title {
+    background-color: #ff9900; /* Change to your desired color */
+    padding: 20px; /* Add some padding */
+    text-align: center; /* Center the text */
+    width: 100%; /* Full width */
+    margin-top: 15px; /* Space above the container */
+
+}
+
+.about-title h1 {
+    color: white; /* Text color */
+    font-size: 42px; /* Font size */
+    margin: 0; /* Remove default margin */
+    font-weight: 300; /* Set font weight to thin */
+
+}
+
+.info-container {
+    background-color: #f0f0f0; /* Very light gray */
+    padding: 20px; /* Add padding */
+    text-align: center; /* Center the text */
+    width: 100%; /* Full width for the container */
+    margin-top: 0px; /* Space above the container */
+}
+
+.info-text {
+    margin-right: 50px; /* Center the text inside the container */
+    margin-left: 50px;
+}
+
+.info-container p {
+    font-size: 16px; /* Adjust font size */
+    color: black; /* Text color */
+    margin-bottom: 60px; /* Space below the paragraph */
+    line-height: 2; /* Increase leading (line height) */
+
+}
+
+.image-container {
+    display: flex; /* Use Flexbox for horizontal layout */
+    justify-content: center; /* Center images */
+    gap: 20px; /* Space between images */
+    margin-top: 40px; /* Space above the image container */
+
+}
+
+.image-container img {
+    width: auto; /* Allow width to adjust */
+    height: 250px; /* Set a fixed height for all images */
+    max-width: 100%; /* Ensure responsiveness */
+}
+
+.info-img {
+    width: 100px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.footer {
+    background-color: rgba(153, 204, 0, 0.3); /* Green with 80% opacity */
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center the text */
+    font-size: 8px; /* Font size for footer text */
+    width: 100%; /* Ensure full width */
+    position: relative; /* Ensure it stays in flow */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+}
+
+.footer-icons {
+    display: flex; /* Use Flexbox for icon alignment */
+    justify-content: center; /* Center the icons */
+    gap: 10px; /* Space between icons */
+    margin-bottom: 10px; /* Space between icons and links */
+}
+
+.footer-icons .icon-img {
+    width: 24px; /* Icon size */
+    height: auto; /* Maintain aspect ratio */
+}
+.footer-links {
+    margin-bottom: 10px; /* Space between links and copyright text */
+}
+
+.footer a {
+    color: black; /* Link color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 5px; /* Space between links */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
