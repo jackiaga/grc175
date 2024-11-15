@@ -149,8 +149,8 @@ border-radius: 0px;
 
 /* Main content wrapper (this will have the background color) */
 .main-content {
-    background-color: rgba(153, 204, 0, 0.6); /* Set your background color here */
-    padding: 20px;
+background-color: rgba(153, 204, 0, 0.6); /* Green with 60% opacity */    
+padding: 20px;
 }
 
 /* Main container for products */
@@ -278,7 +278,7 @@ border-radius: 0px;
 
 
 .footer {
-    background-color: rgba(153, 204, 0, 0.3); /* Green with 80% opacity */
+    background-color: rgba(153, 204, 0, 0.3); /* Green with 30% opacity */
     padding: 20px; /* Add padding for spacing */
     text-align: center; /* Center the text */
     font-size: 8px; /* Font size for footer text */
