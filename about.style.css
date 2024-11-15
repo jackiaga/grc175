@@ -60,6 +60,10 @@ body {
     list-style-type: none; /* Remove bullet points */
 
 }
+.nav a.active {
+    color: #ff9900; /* Change this to your desired color */
+    font-weight: bold; /* Optional: make it bold */
+}
 
 .nav ul li {
     position: relative;
