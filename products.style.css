@@ -149,7 +149,7 @@ border-radius: 0px;
 
 /* Main content wrapper (this will have the background color) */
 .main-content {
-    background-color: #99cc00; /* Set your background color here */
+    background-color: rgba(153, 204, 0, 0.6); /* Set your background color here */
     padding: 20px;
 }
 
