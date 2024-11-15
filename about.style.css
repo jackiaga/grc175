@@ -6,7 +6,7 @@ body {
 }
 
 .header {
-    display: flex;
+    display: flex; /* Use Flexbox */
     justify-content: space-between; /* Space out items */
     align-items: center; /* Center items vertically */
     padding: 10px; /* Add some padding */
@@ -18,7 +18,7 @@ body {
     align-items: center;
     width: 100%;
 }
-
+/* Logo container */
 .logo-container {
     margin-left: 10px;
     margin-top: 8px;
@@ -27,8 +27,11 @@ body {
 .logo {
     width: 150px; /* Adjust logo size */
     height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px;
+    
 }
 
+/* Icon container */
 .icon-container {
     display: flex; 
     gap: 10px; /* Space between icons */
@@ -39,36 +42,81 @@ body {
     text-decoration: none; /*remove underline form links */
 }
 .icon-img{
-    width: 24px; 
+    width: 24px; /*icon size*/
     height: auto; /*maintain ration*/
     transition: opacity 0.3s; /*smooth transition for hover effect*/
 }
 
+/* Navigation styles */
 .nav {
-    display: flex; 
+    display: flex; /* Use Flexbox for nav */
     margin-left: auto; /* Space between icons and nav */
-
 }
 
 .nav ul {
     display: flex; /* Display nav items inline */
+    padding; 0;
+    margin: 0;
     list-style-type: none; /* Remove bullet points */
-    gap: 35px; /* Space between nav items */
+
 }
 
-.nav a.active {
-    color: #ff9900; /* Change this to your desired color */
-    font-weight: bold; /* Optional: make it bold */
+.nav ul li {
+    position: relative;
+    margin-right: 20px; /* Space between items */
 }
-.nav a {
+
+.nav ul li a {
     color: black; /* Link color */
     text-decoration: none; /* Remove underline */
+    padding: 10px;
+    display: block;
     font-size: 18px;
-    font-weight: 600
+    font-weight: 600;
 }
+
+.nav ul li ul {
+display: none;
+position: absolute;
+padding: 10px;
+border-radius: 0px;
+}
+
+
 .nav a:hover {
     color: #ff9900; /* Change this to your desired color */
 ; /* Background color on hover */
+}
+
+/* Dropdown styles */
+.dropdown {
+    display: none;/* Hide dropdown by default */
+    position: absolute; /* Position relative to the parent */
+    top: 100%; /* Position it below the parent */
+    left: 0; /* Align to the left */
+    background-color: white; /* Background color of the dropdown */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.dropdown li {
+    width: 150px; /* Set a width for dropdown items */
+}
+
+.dropdown a {
+    padding: 10px; /* Add padding */
+    color: black; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.dropdown a:hover {
+    background-color: #ff9900; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+/* Show the dropdown on hover */
+.nav li:hover .dropdown {
+    display: block; /* Show the dropdown when hovering over the parent */
 }
 
 /* Icon styles */
@@ -93,6 +141,8 @@ body {
     width: 28px;
     height: auto;
 }
+
+
 
 .about-title {
     background-color: #ff9900; /* Change to your desired color */
