@@ -214,11 +214,10 @@ border-radius: 0px;
 }
 .footer {
     background-color: rgba(153, 204, 0, 0.3); /* Green with 80% opacity */
-    padding: 0px; /* Add padding for spacing */
     text-align: center; /* Center the text */
     font-size: 12px; /* Font size for footer text */
-    margin-top: 50px; /* Space above the image container */
-	margin-bottom: 50px;
+    padding-top: 50px; /* Space above the image container */
+padding-bottom: 50px;
 	width: 100%;
 }
 
