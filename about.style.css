@@ -212,7 +212,7 @@ border-radius: 0px;
     padding-top: 20px; /* Add padding for spacing */
     padding-bottom: 20px;
     text-align: center; /* Center the text */
-    font-size: 8px; /* Font size for footer text */
+    font-size: 12px; /* Font size for footer text */
     width: 100%; /* Ensure full width */
     position: relative; /* Ensure it stays in flow */
     left: 0; /* Align to the left */
