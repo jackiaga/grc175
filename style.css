@@ -217,8 +217,8 @@ border-radius: 0px;
     text-align: center; /* Center the text */
     font-size: 12px; /* Font size for footer text */
     padding-top: 30px; /* Space above the image container */
-padding-bottom: 30px;
-	width: 100%;
+    padding-bottom: 30px;
+    width: 100%;
 }
 
 .footer-icons {
