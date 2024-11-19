@@ -161,7 +161,7 @@ border-radius: 0px;
     display: flex; /* Center the product box */
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
-    width:100%;
+    width: 100%;
 }
 
 .top-sellers-title {
@@ -216,9 +216,9 @@ border-radius: 0px;
     background-color: rgba(153, 204, 0, 0.3); /* Green with 80% opacity */
     padding: 0px; /* Add padding for spacing */
     text-align: center; /* Center the text */
-    font-size: 8px; /* Font size for footer text */
+    font-size: 12px; /* Font size for footer text */
     margin-top: 20px; /* Space above the image container */
-	width:100%;
+	width: 100%;
 }
 
 .footer-icons {
