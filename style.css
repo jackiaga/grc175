@@ -158,7 +158,6 @@ border-radius: 0px;
     background-color: rgba(153, 204, 0, 0.6); /* Green with 80% opacity */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     padding: 30px; /* Padding around the product box */
-margin-top: 0px;
     display: flex; /* Center the product box */
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
@@ -255,7 +254,8 @@ margin-top: 0px;
 	zoom: 1; 
 	position: relative;
 	width: 100%;
-	height: auto;
+	max-width: 1920px;
+	max-height:768px;
 	margin:5px auto 12.5px;
 	z-index:90;
 	text-align:left; /* reset align=center */
@@ -267,7 +267,7 @@ margin-top: 0px;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box; 
 }
-* html #wowslider-container1{ width:960px }
+* html #wowslider-container1{ width:1920px }
 #wowslider-container1 .ws_images ul{
 	position:relative;
 	width: 10000%; 
@@ -297,8 +297,8 @@ margin-top: 0px;
 	left:0;
 	top:0;
 	height:100%;
-	max-height:360px;
-	max-width: 960px;
+	max-height:768px;
+	max-width: 1920px;
 	vertical-align: top;
 	border:none;
 	overflow: hidden;
@@ -306,7 +306,7 @@ margin-top: 0px;
 #wowslider-container1 .ws_images ul a{
 	width:100%;
 	height:100%;
-	max-height:360px;
+	max-height:768px;
 	display:block;
 	color:transparent;
 }
@@ -322,7 +322,7 @@ margin-top: 0px;
 	margin:0;
 }
 #wowslider-container1 .ws_images > div > img {
-	max-height:360px;
+	max-height:768px;
 }
 
 #wowslider-container1 .ws_images iframe {
@@ -674,7 +674,7 @@ margin-top: 0px;
 	text-indent:0;
 	display:block;
 	bottom:15px;
-	left:-64px;
+	left:-60px;
 	visibility:hidden;
 	position:absolute;
     border: 5px solid #FFFFFF;
@@ -693,7 +693,7 @@ margin-top: 0px;
 	left:0;
 	overflow:hidden;
 	position:relative;
-	width:128px;
+	width:120px;
 	background-color:#FFFFFF;
 }
 #wowslider-container1  .ws_bullets .ws_bulframe{
