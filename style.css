@@ -142,17 +142,6 @@ border-radius: 0px;
     height: auto;
 }
 
-.slider {
-    display: flex; /* Center the slider if needed */
-    justify-content: center; /* Center the slider horizontally */
-    margin: 20px 0; /* Add some margin above and below the slider */
-}
-
-.slider-gif {
-    max-width: 100%; /* Make sure the GIF is responsive */
-    height: auto; /* Maintain aspect ratio */
-}
-
 /* Product styles */
 .green-background {
     background-color: rgba(153, 204, 0, 0.6); /* Green with 80% opacity */
