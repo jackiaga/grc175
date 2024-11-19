@@ -255,8 +255,7 @@ margin-top: 0px;
 	zoom: 1; 
 	position: relative;
 	width: 100%;
-	max-width: 960px;
-	max-height:360px;
+	height: auto;
 	margin:5px auto 12.5px;
 	z-index:90;
 	text-align:left; /* reset align=center */
