@@ -150,7 +150,8 @@ border-radius: 0px;
 
 .about-title {
     background-color: #ff9900; /* Change to your desired color */
-    padding: 20px; /* Add some padding */
+    padding-top: 20px; /* Add some padding */
+    padding-bottom: 20px;
     text-align: center; /* Center the text */
     width: 100%; /* Full width */
     margin-top: 15px; /* Space above the container */
@@ -167,7 +168,8 @@ border-radius: 0px;
 
 .info-container {
     background-color: #f0f0f0; /* Very light gray */
-    padding: 20px; /* Add padding */
+    padding-top: 20px; /* Add padding */
+    padding-bottom:20px;
     text-align: center; /* Center the text */
     width: 100%; /* Full width for the container */
     margin-top: 0px; /* Space above the container */
@@ -207,7 +209,8 @@ border-radius: 0px;
 
 .footer {
     background-color: rgba(153, 204, 0, 0.3); /* Green with 80% opacity */
-    padding: 20px; /* Add padding for spacing */
+    padding-top: 20px; /* Add padding for spacing */
+    padding-bottom: 20px;
     text-align: center; /* Center the text */
     font-size: 8px; /* Font size for footer text */
     width: 100%; /* Ensure full width */
