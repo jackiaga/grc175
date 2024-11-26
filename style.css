@@ -137,6 +137,7 @@ body {
     display: block; /* Show the dropdown when hovering over the parent */
 }
 
+
 /* Icon styles */
 .icon-img {
     height: 30px; /* Icon height */
@@ -175,11 +176,10 @@ body {
 .green-background {
     background-color: rgba(153, 204, 0, 0.6); /* Green with 80% opacity */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    padding-bottom: 50px;
+    padding: 30px; /* Padding around the product box */
     display: flex; /* Center the product box */
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
-    width: 100%;
 }
 
 .top-sellers-title {
@@ -232,12 +232,10 @@ body {
 }
 .footer {
     background-color: rgba(153, 204, 0, 0.3); /* Green with 80% opacity */
+    padding: 20px; /* Add padding for spacing */
     text-align: center; /* Center the text */
-    font-size: 12px; /* Font size for footer text */
-    padding-top: 20px; /* Space above the image container */
-    padding-bottom: 20px;
-	margin-top: 10px;
-    width: 100%;
+    font-size: 8px; /* Font size for footer text */
+    margin-top: 20px; /* Space above the image container */
 }
 
 .footer-icons {
