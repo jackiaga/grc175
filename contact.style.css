@@ -51,20 +51,35 @@ body {
 .nav {
     display: flex; /* Use Flexbox for nav */
     margin-left: auto; /* Space between icons and nav */
+    align-items: center;
 }
 
 .nav ul {
     display: flex; /* Display nav items inline */
-    padding; 0;
+    padding: 0;
     margin: 0;
     list-style-type: none; /* Remove bullet points */
-
 }
 
 .nav ul li {
-    position: relative;
+    position: relative; /* Ensure the dropdown positions correctly */
     margin-right: 20px; /* Space between items */
 }
+
+/* ABOUT section styles (non-link) */
+/* ABOUT section styles (non-link) */
+.nav ul li span.about-text {
+    cursor: pointer; /* Make it look clickable */
+    padding: 10px; /* Adjust padding if necessary */
+    display: inline-block;
+    color: black; /* Text color */
+    font-size: 18px; /* Adjust font size */
+    font-weight: 600; /* Optional: add some font weight */
+    white-space: nowrap; /* Prevent text wrapping */
+    background: none; /* Remove any background color */
+    border: none; /* Remove any border if it's applied */
+}
+
 
 .nav ul li a {
     color: black; /* Link color */
@@ -76,27 +91,33 @@ body {
 }
 
 .nav ul li ul {
-display: none;
-position: absolute;
-padding: 10px;
-border-radius: 0px;
+    position: absolute;
+    padding: 10px;
+    border-radius: 0px;
+    top: 100%; /* Position it below the parent */
+    left: 0;
+    background-color: none; /* Background color of the dropdown */
+    z-index: 1000; /* Ensure it appears above other content */
+    display: none;
 }
 
+.nav a.active {
+    color: #ff9900; /* Change this to your desired color */
+    font-weight: bold; /* Optional: make it bold */
+}
 
+/* Hover effects */
 .nav a:hover {
     color: #ff9900; /* Change this to your desired color */
-; /* Background color on hover */
 }
 
-/* Dropdown styles */
 .dropdown {
-    display: none;/* Hide dropdown by default */
     position: absolute; /* Position relative to the parent */
     top: 100%; /* Position it below the parent */
     left: 0; /* Align to the left */
     background-color: white; /* Background color of the dropdown */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     z-index: 1000; /* Ensure it appears above other content */
+    
 }
 
 .dropdown li {
@@ -107,11 +128,12 @@ border-radius: 0px;
     padding: 10px; /* Add padding */
     color: black; /* Link color */
     text-decoration: none; /* Remove underline */
+    
 }
 
 .dropdown a:hover {
-    background-color: #ff9900; /* Background color on hover */
-    color: white; /* Text color on hover */
+    background-color: white; /* Background color on hover */
+    color: #ff9900; /* Text color on hover */
 }
 
 /* Show the dropdown on hover */
