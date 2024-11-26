@@ -66,6 +66,14 @@ body {
     margin-right: 20px; /* Space between items */
 }
 
+.nav ul li span.about-text {
+  cursor: pointer;
+  padding: 10px;
+  display: inline-block;
+  /* Optional: make the 'About' text appear like a link */
+  color: black;
+}
+
 .nav ul li a {
     color: black; /* Link color */
     text-decoration: none; /* Remove underline */
@@ -110,8 +118,8 @@ border-radius: 0px;
 }
 
 .dropdown a:hover {
-    background-color: #ff9900; /* Background color on hover */
-    color: white; /* Text color on hover */
+    background-color: white; /* Background color on hover */
+    color: #ff9900; /* Text color on hover */
 }
 
 /* Show the dropdown on hover */
