@@ -122,8 +122,8 @@ border-radius: 0px;
 }
 
 .dropdown a:hover {
-    background-color: #ff9900; /* Background color on hover */
-    color: white; /* Text color on hover */
+    background-color: white; /* Background color on hover */
+    color: #ff9900; /* Text color on hover */
 }
 
 /* Show the dropdown on hover */
