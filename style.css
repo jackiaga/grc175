@@ -66,12 +66,14 @@ body {
     margin-right: 20px; /* Space between items */
 }
 
+/* ABOUT section styles (non-link) */
 .nav ul li span.about-text {
-  cursor: pointer;
-  padding: 10px;
-  display: inline-block;
-  /* Optional: make the 'About' text appear like a link */
-  color: black;
+    cursor: pointer; /* Make it look clickable */
+    padding: 10px;
+    display: inline-block;
+    color: black; /* Text color */
+    font-size: 18px; /* Adjust font size */
+    font-weight: 600; /* Optional: add some font weight */
 }
 
 .nav ul li a {
