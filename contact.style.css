@@ -1,0 +1,238 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+}
+
+.header {
+    display: flex; /* Use Flexbox */
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Add some padding */
+    background-color: white; /* Example background color */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+/* Logo container */
+.logo-container {
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.logo {
+    width: 150px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px;
+    
+}
+
+/* Icon container */
+.icon-container {
+    display: flex; 
+    gap: 10px; /* Space between icons */
+    margin-left: 30px;
+}
+
+.icon {
+    text-decoration: none; /*remove underline form links */
+}
+.icon-img{
+    width: 24px; /*icon size*/
+    height: auto; /*maintain ration*/
+    transition: opacity 0.3s; /*smooth transition for hover effect*/
+}
+
+/* Navigation styles */
+.nav {
+    display: flex; /* Use Flexbox for nav */
+    margin-left: auto; /* Space between icons and nav */
+}
+
+.nav ul {
+    display: flex; /* Display nav items inline */
+    padding; 0;
+    margin: 0;
+    list-style-type: none; /* Remove bullet points */
+
+}
+
+.nav ul li {
+    position: relative;
+    margin-right: 20px; /* Space between items */
+}
+
+.nav ul li a {
+    color: black; /* Link color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav ul li ul {
+display: none;
+position: absolute;
+padding: 10px;
+border-radius: 0px;
+}
+
+
+.nav a:hover {
+    color: #ff9900; /* Change this to your desired color */
+; /* Background color on hover */
+}
+
+/* Dropdown styles */
+.dropdown {
+    display: none;/* Hide dropdown by default */
+    position: absolute; /* Position relative to the parent */
+    top: 100%; /* Position it below the parent */
+    left: 0; /* Align to the left */
+    background-color: white; /* Background color of the dropdown */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.dropdown li {
+    width: 150px; /* Set a width for dropdown items */
+}
+
+.dropdown a {
+    padding: 10px; /* Add padding */
+    color: black; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.dropdown a:hover {
+    background-color: #ff9900; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+/* Show the dropdown on hover */
+.nav li:hover .dropdown {
+    display: block; /* Show the dropdown when hovering over the parent */
+}
+
+/* Icon styles */
+.icon-img {
+    height: 30px; /* Icon height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Extra icons container */
+.extra-icons {
+    display: flex; 
+    gap: 10px; /* Space between extra icons */
+    margin-left: 150px; /* Space between nav and extra icons */
+}
+
+.extra-icons .search-img {
+    width: 24px; /* Set size for extra icons */
+    height: auto; /*maintain ration*/
+}
+
+.extra-icons .cart-icon {
+    width: 28px;
+    height: auto;
+}
+
+.about-title {
+    background-color: #ff9900;
+    padding: 0px; /* Add some padding */
+    text-align: center; /* Center the text */
+    width: 100%; /* Full width */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 15px; /* Space above the container */
+
+}
+
+.about-title h1 {
+    color: white; /* Text color */
+    font-size: 42px; /* Font size */
+    margin: 0; /* Remove default margin */
+    font-weight: 300; /* Set font weight to thin */
+}
+   
+.container {
+    display: flex;
+    margin-top: 20px; /* Space above the image container */
+    gap: 10px;
+}
+
+        
+/* Style for the left column  */
+.left-column {
+     flex: 1; /* Takes up equal space */
+     padding: 20px;
+     background-color: #f4f4f4;
+}
+        
+/* Style for the right column ) */
+.right-column {
+    flex: 1; /* Takes up equal space */
+}
+        
+.map-container {
+    position: relative;
+    width: 100%;   
+    height: 0;     
+    padding-bottom: 520px;
+        
+}
+
+.map-container iframe {
+    position: absolute;
+    width: 100%;  
+    height: 100%;  
+}
+      
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: rgba(153, 204, 0, 0.3); /* Green with 80% opacity */
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center the text */
+    font-size: 8px; /* Font size for footer text */
+    margin-top: 20px; /* Space above the image container */
+}
+
+.footer-icons {
+    display: flex; /* Use Flexbox for icon alignment */
+    justify-content: center; /* Center the icons */
+    gap: 10px; /* Space between icons */
+    margin-bottom: 10px; /* Space between icons and links */
+}
+
+.footer-icons .icon-img {
+    width: 24px; /* Icon size */
+    height: auto; /* Maintain aspect ratio */
+}
+.footer-links {
+    margin-bottom: 10px; /* Space between links and copyright text */
+}
+
+.footer a {
+    color: black; /* Link color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 5px; /* Space between links */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
