@@ -70,6 +70,14 @@ body {
     margin-right: 20px; /* Space between items */
 }
 
+.nav ul li span.about-text {
+  cursor: pointer;
+  padding: 10px;
+  display: inline-block;
+  /* Optional: make the 'About' text appear like a link */
+  color: black;
+}
+
 .nav ul li a {
     color: black; /* Link color */
     text-decoration: none; /* Remove underline */
