@@ -204,6 +204,11 @@ body {
     text-align: center; /* Ensure text is centered */
 }
 
+.section-content {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
 /* Section 1: Nutrition Overview */
 #nutrition-overview {
     background-color:  rgba(153, 204, 0, 0.3);
