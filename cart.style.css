@@ -173,7 +173,7 @@ a {
 
 .cta-button {
     display: block;
-    width: 120px;
+    width: 130px;
     margin: 30px auto;
     padding: 15px;
     background-color: #FF9900;
@@ -194,6 +194,7 @@ a {
     text-align: center;
     font-size: 24px;
     margin-top: 50px;
+    border-top: 10px solid #ff9900;
 }
 
 /* Product Suggestions Section */
