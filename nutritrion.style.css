@@ -202,7 +202,7 @@ body {
     padding: 50px 20px;
     line-height: 2;
     text-align: center; /* Ensure text is centered */
-    border-bottom: 2px solid #013220; /* Add a border to create a line between sections */
+    border-bottom: 2px solid #99cc00; /* Add a border to create a line between sections */
 }
 
 .section-content {
