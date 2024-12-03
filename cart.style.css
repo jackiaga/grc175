@@ -164,23 +164,6 @@ body {
     height: auto;
 }
 
-.about-title {
-    background-color: #ff9900;
-    padding: 0px; /* Add some padding */
-    text-align: left;
-    width: 100%; /* Full width */
-    margin-top: 15px; /* Space above the container */
-    padding: 15px 0px 15px 20px;
-}
-
-.about-title h1 {
-    color: white; /* Text color */
-    font-size: 42px; /* Font size */
-    margin: 0; /* Remove default margin */
-    font-weight: 300; /* Set font weight to thin */
-
-}
-
 
 
 
