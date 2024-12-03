@@ -202,6 +202,7 @@ body {
     padding: 40px 20px;
     line-height: 2;
     text-align: center; /* Ensure text is centered */
+    border-bottom: 2px solid #ccc; /* Add a border to create a line between sections */
 }
 
 .section-content {
@@ -211,17 +212,18 @@ body {
 
 /* Section 1: Nutrition Overview */
 #nutrition-overview {
-    background-color:  rgba(153, 204, 0, 0.3);
+    background-color: none;
 }
 
 /* Section 2: Ingredients */
 #ingredients {
-    background-color: rgba(211, 211, 211, 0.7);
+    background-color: none;
 }
 
 /* Section 3: Health Benefits */
 #health-benefits {
-    background-color: rgba(255, 153, 0, 0.3);
+        background-color: none;
+    border-bottom: none; /* Remove border for the last section */;
 }
 
 
