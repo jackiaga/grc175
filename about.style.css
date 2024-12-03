@@ -193,8 +193,8 @@ body {
 }
 
 .info-text {
-    margin-right: 50px; /* Center the text inside the container */
-    margin-left: 50px;
+    margin-right: 150px; /* Center the text inside the container */
+    margin-left: 150px;
 }
 
 .info-container p {
