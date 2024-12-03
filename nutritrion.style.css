@@ -200,6 +200,7 @@ body {
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
     padding: 40px 20px;
+    line-height: 2;
     text-align: center; /* Ensure text is centered */
 }
 
