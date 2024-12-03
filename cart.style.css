@@ -169,9 +169,8 @@ body {
     padding: 0px; /* Add some padding */
     text-align: left;
     width: 100%; /* Full width */
-    padding-top: 20px;
-    padding-bottom: 20px;
     margin-top: 15px; /* Space above the container */
+    padding: 20px 0px 20px 20px;
 }
 
 .about-title h1 {
