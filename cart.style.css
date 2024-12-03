@@ -163,6 +163,7 @@ body {
     width: 28px;
     height: auto;
 }
+
 .about-title {
     background-color: #ff9900;
     padding: 0px; /* Add some padding */
@@ -171,7 +172,6 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 15px; /* Space above the container */
-
 }
 
 .about-title h1 {
