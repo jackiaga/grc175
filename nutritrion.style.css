@@ -240,7 +240,7 @@ body {
     padding: 20px; /* Add padding for spacing */
     text-align: center; /* Center the text */
     font-size: 12px; /* Font size for footer text */
-    margin-top: 20px; /* Space above the image container */
+    margin-top: 0px; /* Space above the image container */
 }
 
 .footer-icons {
