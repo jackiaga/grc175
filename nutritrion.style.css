@@ -202,7 +202,7 @@ body {
     padding: 40px 20px;
     line-height: 2;
     text-align: center; /* Ensure text is centered */
-    border-bottom: 2px solid #ccc; /* Add a border to create a line between sections */
+    border-bottom: 2px solid darkgreen; /* Add a border to create a line between sections */
 }
 
 .section-content {
@@ -212,7 +212,7 @@ body {
 
 /* Section 1: Nutrition Overview */
 #nutrition-overview {
-    background-color: white;
+    background-color: none;
 }
 
 /* Section 2: Ingredients */
