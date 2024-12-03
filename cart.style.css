@@ -184,6 +184,63 @@ body {
 
 
 
+a {
+    text-decoration: none;
+}
+
+.cta-button {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    padding: 15px;
+    background-color: #FF9900;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: darkgreen;
+}
+
+/* Empty Cart Message */
+.empty-cart-message {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+/* Product Suggestions Section */
+.suggestions-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.product-card {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-name {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
 
 
 
