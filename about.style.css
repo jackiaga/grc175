@@ -210,6 +210,8 @@ body {
     justify-content: center; /* Center images */
     gap: 20px; /* Space between images */
     margin-top: 40px; /* Space above the image container */
+    font-size: 12px;
+    font-style: italic;
 
 }
 
