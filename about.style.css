@@ -224,6 +224,11 @@ body {
     height: auto; /* Maintain aspect ratio */
 }
 
+.figcaption {
+    font-size: 12px;
+    font-style: italic;
+}
+
 .footer {
     background-color: rgba(153, 204, 0, 0.3); /* Green with 80% opacity */
     padding-top: 20px; /* Add padding for spacing */
