@@ -1,10 +1,10 @@
-@charset "utf-8";
-/* CSS Document */
+/* General Body Styles */
 body {
     background-size: cover;
     font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
 }
 
+/* Header Styles */
 .header {
     display: flex; /* Use Flexbox */
     justify-content: space-between; /* Space out items */
@@ -18,6 +18,7 @@ body {
     align-items: center;
     width: 100%;
 }
+
 /* Logo container */
 .logo-container {
     margin-left: 10px;
@@ -28,7 +29,6 @@ body {
     width: 150px; /* Adjust logo size */
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 20px;
-    
 }
 
 /* Icon container */
@@ -39,12 +39,13 @@ body {
 }
 
 .icon {
-    text-decoration: none; /*remove underline form links */
+    text-decoration: none; /* Remove underline from links */
 }
-.icon-img{
-    width: 24px; /*icon size*/
-    height: auto; /*maintain ration*/
-    transition: opacity 0.3s; /*smooth transition for hover effect*/
+
+.icon-img {
+    width: 24px; /* Icon size */
+    height: auto; /* Maintain ratio */
+    transition: opacity 0.3s; /* Smooth transition for hover effect */
 }
 
 /* Navigation styles */
@@ -67,7 +68,6 @@ body {
 }
 
 /* ABOUT section styles (non-link) */
-/* ABOUT section styles (non-link) */
 .nav ul li span.about-text {
     cursor: pointer; /* Make it look clickable */
     padding: 10px; /* Adjust padding if necessary */
@@ -79,7 +79,6 @@ body {
     background: none; /* Remove any background color */
     border: none; /* Remove any border if it's applied */
 }
-
 
 .nav ul li a {
     color: black; /* Link color */
@@ -111,13 +110,13 @@ body {
     color: #ff9900; /* Change this to your desired color */
 }
 
+/* Dropdown Styles */
 .dropdown {
     position: absolute; /* Position relative to the parent */
     top: 100%; /* Position it below the parent */
     left: 0; /* Align to the left */
     background-color: white; /* Background color of the dropdown */
     z-index: 1000; /* Ensure it appears above other content */
-    
 }
 
 .dropdown li {
@@ -128,7 +127,6 @@ body {
     padding: 10px; /* Add padding */
     color: black; /* Link color */
     text-decoration: none; /* Remove underline */
-    
 }
 
 .dropdown a:hover {
@@ -156,7 +154,7 @@ body {
 
 .extra-icons .search-img {
     width: 24px; /* Set size for extra icons */
-    height: auto; /*maintain ration*/
+    height: auto; /* Maintain ratio */
 }
 
 .extra-icons .cart-icon {
@@ -173,11 +171,12 @@ body {
 
 /* Main container for products */
 .products-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 columns */
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex; /* Use Flexbox */
+  flex-wrap: wrap; /* Allow items to wrap onto the next line */
+  gap: 20px; /* Space between product cards */
+  max-width: 1200px; /* Limit max width */
+  margin: 0 auto; /* Center the products container */
+  justify-content: flex-start; /* Align items to the left */
 }
 
 /* Individual product card styling */
@@ -188,57 +187,10 @@ body {
   text-align: center;
   padding: 20px;
   transition: transform 0.2s ease;
+  
+  flex: 1 1 calc(20% - 20px); /* Each card takes 20% of the container, minus the gap */
+  box-sizing: border-box; /* Ensure padding and margin are included in the width calculation */
 }
-
-
-/* Image styling */
-.product-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* Product name styling */
-.product-name {
-  font-size: 1.2rem;
-  margin-top: 15px;
-  font-weight: bold;
-  color: #333;
-}
-
-/* Product description styling */
-.product-description {
-  font-size: 1rem;
-  margin-top: 10px;
-  color: #666;
-}
-
-/* Product price styling */
-.product-price {
-  font-size: 1.2rem;
-  font-weight
-}
-
-
-/* Main container for products */
-.products-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 columns */
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Individual product card styling */
-.product-card {
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding: 20px;
-}
-
 
 /* Image styling */
 .product-image {
@@ -266,9 +218,10 @@ body {
 /* Product price styling */
 .product-price {
   font-size: 1.2rem;
-  font-weight
+  font-weight: bold;
 }
 
+/* Add to Cart button styling */
 .add-to-cart-btn {
     background-color: #FF9900; /* Background color for the button */
     color: white; /* Text color for the button */
@@ -283,18 +236,39 @@ body {
     background-color: darkgreen; /* Darker green on hover */
 }
 
+/* Mobile responsiveness */
+@media (max-width: 1200px) {
+  .products-container {
+    justify-content: flex-start; /* Align to the left when screen is smaller */
+  }
+  
+  /* For smaller screens, each product takes up 50% of the container width */
+  .product-card {
+    flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+  }
+}
 
+@media (max-width: 768px) {
+  /* For very small screens, make each product take up 100% of the width */
+  .products-container {
+    justify-content: flex-start; /* Align to the left on smaller screens */
+  }
+  
+  .product-card {
+    flex: 1 1 100%; /* Each product card takes up 100% of the container width */
+  }
+}
 
+@media (max-width: 480px) {
+  /* Adjust further for very small screens like phones in portrait mode */
+  .product-card {
+    flex: 1 1 100%; /* Make sure products take full width */
+    max-width: 100%; /* Ensure they stretch across the container */
+    padding: 15px; /* Slightly reduce padding for very small screens */
+  }
+}
 
-
-
-
-
-
-
-
-
-
+/* Footer Styles */
 .footer {
     background-color: rgba(153, 204, 0, 0.3); /* Green with 80% opacity */
     padding: 20px; /* Add padding for spacing */
@@ -314,6 +288,7 @@ body {
     width: 24px; /* Icon size */
     height: auto; /* Maintain aspect ratio */
 }
+
 .footer-links {
     margin-bottom: 10px; /* Space between links and copyright text */
 }
