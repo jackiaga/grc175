@@ -13,6 +13,31 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script type="text/javascript" src="jquery.js"></script>
 <!-- End WOWSlider.com HEAD section -->
+ 
+<style>
+        .slider-container {
+            position: relative;
+        }
+        
+        .corner-button {
+            position: absolute;
+            top: 645px;
+            right: 10px; 
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            z-index: 1000; 
+            text-decoration: none;
+        }
+
+        .corner-button:hover {
+            background-color: darkgreen; 
+        }
+    </style>
 	
 </head>
 <body>
@@ -61,7 +86,10 @@
             </div>
         </div>
     </header>
-    
+
+<div class="slider-container">
+        <a href="products.html" class="corner-button">Shop Now!</a>
+	
 <!-- Start WOWSlider.com BODY section -->
 <div id="wowslider-container1">
 <div class="ws_images"><ul>
